@@ -1,0 +1,95 @@
+{
+  "name": "netmanagers-fail2ban",
+  "version": "1.4.0",
+  "source": "https://github.com/netmanagers/puppet-fail2ban",
+  "author": "Javier Bertoli",
+  "license": "Apache2",
+  "summary": "Puppet module for fail2ban",
+  "description": "This module installs and manages fail2ban. Check README for details.",
+  "project_page": "http://www.netmanagers.com.ar",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian"
+    },
+    {
+      "operatingsystem": "RedHat"
+    },
+    {
+      "operatingsystem": "CentOS"
+    },
+    {
+      "operatingsystem": "Ubuntu"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.1.0"
+    },
+    {
+      "name": "puppetlabs/concat",
+      "version_requirement": ">= 1.0.0"
+    },
+    {
+      "name": "example42/monitor",
+      "version_requirement": ">= 2.0.0"
+    },
+    {
+      "name": "example42/iptables",
+      "version_requirement": ">=2.0.0"
+    },
+    {
+      "name": "example42/puppi",
+      "version_requirement": ">=2.0.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=4.1.0"
+    },
+    {
+      "name": "puppetlabs/concat",
+      "version_requirement": ">=1.0.0"
+    },
+    {
+      "name": "example42/puppi",
+      "version_requirement": ">=2.0.0"
+    },
+    {
+      "name": "example42/monitor",
+      "version_requirement": ">=2.0.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "548939ce5e07a7227a0397a6e80f59ef",
+    "README.md": "ed60084fa1fd38c7c16f6b730dbbe9e2",
+    "Rakefile": "a98b55f4dff239db6e4ab16bbe795a0b",
+    "TODO": "7482619c712d357f86d413d6d4f733bd",
+    "manifests/action.pp": "62cb640ce8bafe1a5bb19cfdd0d7341e",
+    "manifests/filter.pp": "7c78c98dd8deb841dd49bddeba913a10",
+    "manifests/init.pp": "f0aee62aad1702d8feabc7304b6a3b40",
+    "manifests/jail.pp": "3127c1e51f584b8c7fdf94bc297c6a5d",
+    "manifests/params.pp": "ca4665f566af799f4b2705c724e5afdc",
+    "manifests/spec.pp": "0e3992dabfa63fbc2321b29b88c2580c",
+    "spec/classes/fail2ban_spec.rb": "fdd7245751bb8525d5381cecc28b37ab",
+    "spec/defines/fail2ban_action_spec.rb": "98e5e6f05cc605decbaa63fb0f19f64c",
+    "spec/defines/fail2ban_filter_spec.rb": "717f7c07ce7fa5ca739f2f699b047e43",
+    "spec/defines/fail2ban_jail_spec.rb": "32218f8e036a8a65c66556174e4a5780",
+    "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+    "templates/action.local.erb": "06716f0900556e57d68a1031d925a0f8",
+    "templates/concat/jail.local-footer.erb": "3694a32ce7c4ba1a2aa217140474a136",
+    "templates/concat/jail.local-header.erb": "e9959a3999a0454a16750bc74e97fb53",
+    "templates/concat/jail.local-stanza.erb": "f4f51ba903203839e9f5cf4b59bd0b1b",
+    "templates/fail2ban.local.erb": "e6a8122cefff4e5facc519ba205a727c",
+    "templates/filter.local.erb": "5de9b28ddaadbdc8fdf2f44964b052d3",
+    "templates/jail.local.erb": "08ea5b1f3bf59be3b96bf850dca2ec76",
+    "templates/spec.erb": "055d4f22a02a677753cf922108b6e50c",
+    "tests/absent.pp": "b5347e5fb797cba5f65635ff0751d875",
+    "tests/disable.pp": "6a11b13f374bd89c1e821d707d8898eb",
+    "tests/init.pp": "ea06189ea12edae49a21d1d5faabba2b"
+  }
+}
